@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Press any box to make the body color ..</h1>
+    <div class="color">
+    <div class="box" id="gray"></div>
+    <div class="box" id="yellow"></div>
+    <div class="box" id="red"></div>
+    <div class="box" id="green"></div>
+    </div>
+
+    <script>
+        let color = document.querySelectorAll('.box')
+        let body = document.querySelector('body')
+        Array.from(color).forEach( (e) =>{
+        e.addEventListener('click',(f) =>{
+            body.style.backgroundColor = f.target.id
+            body.style.color = 'white'
+        })
+        })
+    </script>
+</body>
+</html>
