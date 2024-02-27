@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.box{
+    background-color: rgb(66, 65, 65);
+    margin-left: 5px;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    max-width: 180px;
+    border: 2px solid white;
+    display: none;
+    transition: left 1s ease;
+}
+
+#start{
+    font-size: 27px;
+    color: white;
+    margin: 15px;
+}
+#close{
+    font-size: 27px;
+    color: white;
+    margin: 15px;
+}
+
+ul{
+    transition: all 5s;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+  
+}
